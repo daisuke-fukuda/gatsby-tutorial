@@ -7,9 +7,8 @@ ENV NODE_ENV=development
 
 RUN apk add git curl
 
-# 雛形を生成するのに必要なパッケージのインストール
+RUN npm install -g gatsby-cli surge
 
-RUN npm install -g gatsby-cli
 
 # ディレクトリを移動する
 WORKDIR /app
